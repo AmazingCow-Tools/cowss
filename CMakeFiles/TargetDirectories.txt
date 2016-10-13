@@ -1,0 +1,3 @@
+/home/n2omatt/ss/CMakeFiles/edit_cache.dir
+/home/n2omatt/ss/CMakeFiles/rebuild_cache.dir
+/home/n2omatt/ss/CMakeFiles/ss.dir
