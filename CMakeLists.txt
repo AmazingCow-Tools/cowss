@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 add_compile_options(-std=c++11)
-project( ss )
+project( cowss )
 
 find_package(X11 REQUIRED)
 find_package(Threads REQUIRED)
@@ -13,12 +13,14 @@ include_directories(${X11_INCLUDE_DIR})
 
 link_directories(${X11_LIBRARIES})
 
-add_executable(ss
+add_executable(cowss
     CImg.h
     SS.h
     SS.cpp
     main.cpp
 )
 
-target_link_libraries(ss ${X11_LIBRARIES})
-target_link_libraries(ss ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(cowss ${X11_LIBRARIES})
+target_link_libraries(cowss ${CMAKE_THREAD_LIBS_INIT})
+
+install(TARGETS cowss DESTINATION /usr/local/bin/)
